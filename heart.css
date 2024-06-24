@@ -1,0 +1,51 @@
+
+body{
+    margin:0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 255, 240);
+}
+/*PARTE DO CORAÇÃO LADO AZUL*/
+.heart{
+    height:200px;
+    width:100px;
+    background:  #0038f2;
+    position: relative;
+    transform: rotate(45deg);
+    box-shadow: 10px 10px 90px #0038f2;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform-origin: left bottom;
+    /*animation: beat 1s infinite;  */      
+    }
+    /*PARTE DO CORAÇÃO LADO ROSA*/
+.heart2{
+    height: 200px;
+    width: 100px;
+    background: #f20044;
+    position: absolute;
+    box-shadow: -10px 10px 90px #f20044;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform: rotate(-45deg) translateY(100px);
+    transform-origin: left bottom;
+    /*animation: beat 1s infinite;  */  
+}
+/* BATIMENTOS*/
+@keyframes beat{
+   0%{
+    transform: scale(1);
+   }
+   50%{
+    transform: scale(1.5);
+   }
+   100%{
+    transform: scale(1);
+   }
+       }
+    
+ 
+    
